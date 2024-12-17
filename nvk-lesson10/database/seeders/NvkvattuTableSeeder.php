@@ -26,5 +26,18 @@ class NvkvattuTableSeeder extends Seeder
             'nvkDonvt'=>'Bộ',
             'nvkPhantram'=>50,
         ]);
+
+        // $faker = Faker::create();
+        // foreach(range(1,50) as $index)
+        // {
+        //     DB::table('nvknhacc')->insert([
+        //         'nvkMavt'=>$faker->word(4),
+        //         // 'nvkMaNCC'=>$faker->word(15),
+        //         'nvkTenvt'=>$faker->sentence(5),
+        //         'nvkDonvt'=>$faker->word(3),
+        //         'nvkPhantram'=>$faker->randomFloat('2',0,100)
+        //     ]);
+        // }
     }
+    
 }

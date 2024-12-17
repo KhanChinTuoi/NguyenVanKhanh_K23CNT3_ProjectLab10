@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NvkNhaCCController;
+use App\Http\Controllers\NvkVattuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//NhaCC
+Route::get('/nvk-nhaccs',[NvkNhaCCController::class,'list'])->name('nvknhacc.list');
+
+Route::get('/nvk-vattus',[NvkVattuController::class,'list'])->name('nvkvattu.list');
